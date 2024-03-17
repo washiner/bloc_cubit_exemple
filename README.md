@@ -1,16 +1,3 @@
 # bloc_cubit_exemple
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#Neste projeto, criei um arquivo com a classe 'Contador', estendendo do 'Cubit'. No widget da home, envolvi o 'BlocProvider' para instanciar a classe 'Contador'. Envolvei também o widget de texto com o 'BlocBuilder', permitindo que o widget de texto seja reconstruído a cada mudança de estado. As ações dos botões foram acionadas através do 'BlocProvider', ou pelo 'context.read', que é uma forma mais simples quando não há mais ações a serem executadas, ou pelo 'BlocProvider.of', que é utilizado quando existem mais locais para chamar alguma ação.
